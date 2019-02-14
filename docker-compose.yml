@@ -1,0 +1,12 @@
+version: '3'
+
+services: 
+  oracle-db:
+    image: hansehe/oracle-xe-11g:${VERSION}
+    hostname: oracle-db
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 1521:1521
+      - 5500:5500

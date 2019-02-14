@@ -1,0 +1,23 @@
+changelog:
+    file: CHANGELOG.md
+    envKey: VERSION
+
+run:
+    selections:
+        oracle:
+            files:
+                - docker-compose.yml
+
+build:
+    selections:
+        oracle:
+            additionalTag: latest
+            files:
+                - docker-compose.yml
+
+publish:
+    selections:
+        oracle:
+            additionalTag: latest
+            files:
+                - docker-compose.yml
